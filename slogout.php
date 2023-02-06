@@ -1,0 +1,10 @@
+<?php
+	session_start();
+		$session=$_SESSION['mem_id'];
+			if($session=="")
+			{
+				header('location:slogin.php');	
+			}
+		session_destroy();
+		header('location:slogin.php');
+?>
